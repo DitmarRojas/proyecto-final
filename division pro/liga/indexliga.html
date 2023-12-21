@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liga Profesional</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-success bg-opacity-25">
+    <!--ENCABEZADO-->
+    <div
+      class="container-fluid text-center"
+      style="
+        background-image: url(https://scontent.fcbb2-2.fna.fbcdn.net/v/t39.30808-6/377754456_824308319361588_8359719544941291646_n.png?_nc_cat=102&ccb=1-7&_nc_sid=783fdb&_nc_ohc=j7Pz7jgTxm4AX93oEko&_nc_ht=scontent.fcbb2-2.fna&oh=00_AfDFjRcmWNaxCzdDrxpdInvHqubgFebSAoBcZoAmwUWdWQ&oe=65873DC8);
+        background-position: center;
+      "
+    >
+      <div class="row">
+        <div class="col-4 pt-1">
+          <img
+            src="https://assets.stickpng.com/images/6099129a3ae4510004af4a21.png"
+            alt=""
+            height="130"
+            width="150"
+          />
+        </div>
+        <div class="col-4">
+          <img
+            src="https://www.fbf.com.bo/img/escudo.png"
+            alt=""
+            height="150"
+            width="150"
+          />
+        </div>
+        <div class="col-4 pt-1">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Logo_de_la_Conmebol.svg/555px-Logo_de_la_Conmebol.svg.png"
+            alt=""
+            height="130"
+            width="150"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="shadow-lg border border-danger-subtle border-2">
+      <nav
+        class="navbar navbar-expand-lg"
+        style="background-color: rgba(255, 255, 255, 0.648)"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/index.html">
+            <img
+              src="https://www.fbf.com.bo/img/escudo.png"
+              alt="logofbf"
+              width="50"
+              height="50"
+            />
+          </a>
+          <a class="navbar-brand" href="https://www.fbf.com.bo/"
+            ><h2 class="text-success fw-bold">FBF</h2></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  DIVISION PROFESIONAL
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="/division pro/liga/indexliga.html"
+                      >LIGA PROFESIONAL</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="/division pro/seleccion/seleccion.html"
+                      >SELECCION BOLIVIANA</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  AFICIONADOS
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <h5 class="dropdown-header">COPA SIMON BOLIVAR</h5>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">CLASIFICADOS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">CAMPEONES 2023</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  CLUBES
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">HISTORIA</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">JUGADORES</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  TODOS CONTRA TODOS
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="/division pro/liga/todos/todos.html"
+                      >TABLA DE POSICIONES</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="/division pro/liga/todos/todos.html"
+                      >CAMPEONES 2023</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  COPA TIGO 2023
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="/division pro//liga//tigo//tigo.html"
+                      >TABLA DE POSICIONES</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="/division pro//liga//tigo//tigo.html"
+                      >CAMPEONES</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  SELECCION BOLIVIANA
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">CALENDARIO DE PARTIDOS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">JUGADORES</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  COPA SIMON BOLIVAR
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">CLASIFICADOS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">CAMPEONES 2023</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!--CUERPO-->
+    <h1
+      class="text-center my-2"
+      style="
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-shadow: 1px 2px 5px;
+      "
+    >
+      Division Profesional
+    </h1>
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <img
+            class="img-fluid border border-light border-3 shadow-lg rounded-4"
+            hover=""
+            src="https://www.fbf.com.bo/images/upload/C-4aea0883856b2e9b0ee2bf62e6643b0c.png"
+            alt=""
+            height="600"
+            width="800"
+          />
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-8 my-3">
+          <p>
+            La Primera División de Bolivia, también conocida como División
+            Profesional es la máxima competición a nivel de clubes de fútbol en
+            Bolivia y desde 2018 es organizada por la Federación Boliviana de
+            Fútbol. El sistema de competición, durante la gestión 2023.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container my-4">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <table class="table table-bordered text-center">
+            <thead>
+              <tr>
+                <th
+                  colspan="10"
+                  style="
+                    font-size: large;
+                    color: rgb(255, 255, 255);
+                    background-color: rgb(50, 115, 225);
+                  "
+                >
+                  TABLA DE POSICIONES 2023
+                </th>
+              </tr>
+              <tr class="table-primary">
+                <th scope="col">Pos</th>
+                <th scope="col">Equipo</th>
+                <th scope="col">J</th>
+                <th scope="col">G</th>
+                <th scope="col">E</th>
+                <th scope="col">P</th>
+                <th scope="col">GF</th>
+                <th scope="col">GC</th>
+                <th scope="col">DF</th>
+                <th scope="col">Pts</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>The Strongest</td>
+                <td>32</td>
+                <td>19</td>
+                <td>8</td>
+                <td>5</td>
+                <td>65</td>
+                <td>34</td>
+                <td>31</td>
+                <th>65</th>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Bolivar</td>
+                <td>32</td>
+                <td>17</td>
+                <td>6</td>
+                <td>9</td>
+                <td>84</td>
+                <td>42</td>
+                <td>42</td>
+                <th>57</th>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Always Ready</td>
+                <td>32</td>
+                <td>16</td>
+                <td>9</td>
+                <td>7</td>
+                <td>54</td>
+                <td>35</td>
+                <td>19</td>
+                <th>57</th>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Nacional Potosi</td>
+                <td>32</td>
+                <td>16</td>
+                <td>6</td>
+                <td>10</td>
+                <td>72</td>
+                <td>46</td>
+                <td>26</td>
+                <th>54</th>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>Aurora</td>
+                <td>32</td>
+                <td>14</td>
+                <td>9</td>
+                <td>9</td>
+                <td>45</td>
+                <td>31</td>
+                <td>14</td>
+                <th>51</th>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>Real Tamayapo</td>
+                <td>32</td>
+                <td>13</td>
+                <td>10</td>
+                <td>9</td>
+                <td>36</td>
+                <td>34</td>
+                <td>2</td>
+                <th>49</th>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td>Real Santa Cruz</td>
+                <td>32</td>
+                <td>13</td>
+                <td>7</td>
+                <td>12</td>
+                <td>31</td>
+                <td>42</td>
+                <td>-11</td>
+                <th>46</th>
+              </tr>
+              <tr>
+                <th scope="row">8</th>
+                <td>Wilsterman</td>
+                <td>32</td>
+                <td>12</td>
+                <td>13</td>
+                <td>7</td>
+                <td>39</td>
+                <td>27</td>
+                <td>12</td>
+                <th>43</th>
+              </tr>
+              <tr>
+                <th scope="row">9</th>
+                <td>Oriente Petrolero</td>
+                <td>32</td>
+                <td>11</td>
+                <td>10</td>
+                <td>11</td>
+                <td>44</td>
+                <td>42</td>
+                <td>2</td>
+                <th>43</th>
+              </tr>
+              <tr>
+                <th scope="row">10</th>
+                <td>Univesitario de Vinto</td>
+                <td>32</td>
+                <td>9</td>
+                <td>14</td>
+                <td>9</td>
+                <td>30</td>
+                <td>28</td>
+                <td>2</td>
+                <th>41</th>
+              </tr>
+              <tr>
+                <th scope="row">11</th>
+                <td>Independiente</td>
+                <td>32</td>
+                <td>13</td>
+                <td>1</td>
+                <td>18</td>
+                <td>32</td>
+                <td>45</td>
+                <td>-13</td>
+                <th>40</th>
+              </tr>
+              <tr>
+                <th scope="row">12</th>
+                <td>Royal Pari</td>
+                <td>32</td>
+                <td>8</td>
+                <td>11</td>
+                <td>13</td>
+                <td>40</td>
+                <td>53</td>
+                <td>-13</td>
+                <th>35</th>
+              </tr>
+              <tr>
+                <th scope="row">13</th>
+                <td>Guabira</td>
+                <td>32</td>
+                <td>10</td>
+                <td>5</td>
+                <td>17</td>
+                <td>34</td>
+                <td>49</td>
+                <td>-15</td>
+                <th>35</th>
+              </tr>
+              <tr>
+                <th scope="row">14</th>
+                <td>Blooming</td>
+                <td>32</td>
+                <td>9</td>
+                <td>6</td>
+                <td>17</td>
+                <td>37</td>
+                <td>56</td>
+                <td>-19</td>
+                <th>33</th>
+              </tr>
+              <tr>
+                <th scope="row">15</th>
+                <td>Libertad Gran Mamore</td>
+                <td>32</td>
+                <td>9</td>
+                <td>6</td>
+                <td>17</td>
+                <td>32</td>
+                <td>65</td>
+                <td>-33</td>
+                <th>33</th>
+              </tr>
+              <tr>
+                <th scope="row">16</th>
+                <td>Vaca Diez</td>
+                <td>32</td>
+                <td>9</td>
+                <td>6</td>
+                <td>17</td>
+                <td>32</td>
+                <td>61</td>
+                <td>-19</td>
+                <th>32</th>
+              </tr>
+              <tr>
+                <th scope="row">17</th>
+                <td>Palmafrol</td>
+                <td>32</td>
+                <td>8</td>
+                <td>5</td>
+                <td>19</td>
+                <td>32</td>
+                <td>59</td>
+                <td>-27</td>
+                <th>29</th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner rounded-3">
+              <div class="carousel-item active">
+                <img
+                  src="https://cdn.bolivia.com/sdi/2022/11/24/wilstermann-conmemoro-73-aniversario-1091020.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://erbol.com.bo/sites/default/files/the_strongest_512.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://i0.wp.com/premiumsportsbo.com/wp-content/uploads/2023/02/Oriente-Petrolero-e1676839863459.jpg?fit=1000%2C667&ssl=1"
+                  class="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="mt-3 text-center">
+            <p>
+              La Primera División de Bolivia-conocida como Liga Tigo Bolivia por
+              motivos de patrocinio y oficialmente como División Profesional del
+              Fútbol Boliviano (DivPro)- es la máxima categoría del Sistema de
+              Ligas de Bolivia. Es organizada desde 2018 directamente por la
+              Federación Boliviana de Fútbol (FBF) tras suceder a la otrora Liga
+              del Fútbol Profesional Boliviano (LFPB). En la temporada 2003 se
+              cambia el formato del campeonato, pasando de un torneo largo con
+              un campeón anual, a dos torneos en cada temporada, divididos en
+              Torneo Apertura y Torneo Clausura, cada uno con su respectivo
+              campeón. La Primera División es la única categoría con estatus
+              profesional en Bolivia, mientras que el resto de divisiones
+              dependen de sus correspondientes asociaciones departamentales. El
+              campeonato profesional en Bolivia vio sus inicios con el Primer
+              Campeonato de Primera División de 1950, en el que sólo
+              participaron clubes del departamento de La Paz, esto debido a ser
+              la primera región en contar con una entidad profesional de fútbol.
+              Posteriormente y una vez alcanzado el estatus profesional, las
+              asociaciones de fútbol de los departamentos de Oruro y Cochabamba
+              se integraron al campeonato nacional, lo cual permitió que más
+              regiones del país participaran del torneo, adquiriendo así una
+              mayor competitividad. Es importante señalar que en sólo dos
+              campeonatos se tuvo al menos a un representante de cada uno de los
+              nueve departamentos de Bolivia, siendo estos los campeonatos de
+              1961 y 1964. Desde 1950, el equipo que más campeonatos ha obtenido
+              es Bolívar con 30, seguido por The Strongest con 16 y Jorge
+              Wilstermann con 15.​
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--SUB TITUTLO-->
+    <div class="mt-5">
+      <h4
+        class="text-center"
+        style="
+          font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+          text-shadow: 1px 2px 5px;
+        "
+      >
+        RESULTADOS
+      </h4>
+    </div>
+    <div class="container-fluid text-center">
+      <div class="row justify-content-center">
+        <div class="card m-3" style="width: 20rem">
+          <img
+            src="https://www.fbf.com.bo/images/upload/N-62401b654cda2c75172691e840d2fbcf.jpeg"
+            class="card-img-top"
+            height="250px"
+            width="150px"
+            alt="..."
+          />
+          <div class="card-body">
+            <h6 class="card-text">
+              Por la Fecha 13 de la Copa Tigo THE STRONGEST CONFIRMA SU LIDERATO
+              EN EL CAMPEONATO
+            </h6>
+            <p>
+              Hoy se jugaron tres partidos más de la Fecha 13 del Campeonato de
+              la División Profesional del fútbol boliviano. En el coloso de
+              Villa Ingenio, Always Ready derrotó a Blooming por 5 -1. Mientras
+              que Oriente Petrolero hizo respetar su localí­a ante el conjunto
+              de San José venciéndolo por 4 - 0.
+            </p>
+          </div>
+        </div>
+        <div class="card m-3" style="width: 20rem">
+          <img
+            src="https://www.fbf.com.bo/images/upload/N-3f3d57c2598fbbf503a22277ca96b916.jpeg"
+            class="card-img-top"
+            alt="..."
+            height="250px"
+            width="150px"
+          />
+          <div class="card-body">
+            <h6 class="card-text">
+              UN EMPATE Y UNA REMONTADA MARCAN EL INCIO DE LA FECHA 10 Â· Mañana
+              se jugará la segunda jornada de esta fecha.
+            </h6>
+            <p>
+              Hoy arrancó la Fecha 10 del Campeonato de la División Profesional
+              en la que Aurora y Nacional Potosí­ dividieron honores en el Félix
+              Capriles y Real Tomayapo consiguió una remontada, en el IV
+              Centenario, venciendo a Real Santa Cruz.
+            </p>
+          </div>
+        </div>
+        <div class="card m-3" style="width: 20rem">
+          <img
+            src="https://www.fbf.com.bo/images/upload/N-bf377553c77bb47434e617fa69e5f1e8.jpeg"
+            class="card-img-top"
+            alt="..."
+            height="250px"
+            width="150px"
+          />
+          <div class="card-body">
+            <h6 class="card-text">
+              Mañana, los partidos entre Always Ready Vs Blooming, Oriente
+              Petrolero Vs San José y The Strongest Vs Real Tomayapo
+              protagonizarán la jornada.
+            </h6>
+            <p>
+              Tres partidos dieron inicio a la Fecha 13 del Campeonato íšnico de
+              la División Profesional donde Bolí­var y Palma Flor consiguieron
+              un empate 2 - 2, Independiente se impuso a Real Potosí­ por 2 -1.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--PIE DE PAGINA FOOTER-->
+    <div
+      class="container-fluid text-center"
+      style="
+        background-image: url(https://images.vexels.com/content/69996/preview/abstract-green-background-with-spiral-lines-d7cdf5.png);
+      "
+    >
+      <div class="row">
+        <div>
+          <img
+            src="https://www.fbf.com.bo/img/escudo.png"
+            alt=""
+            height="100"
+            width="150"
+          />
+          <h5
+            style="
+              color: darkgreen;
+              font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',
+                sans-serif;
+              text-shadow: 3px 4px 5px;
+            "
+          >
+            PATROCINADORES OFICIALES DE LA VERDE
+          </h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img
+            src="https://www.fbf.com.bo/img/sponsor-2.png"
+            alt=""
+            height="50"
+            width="100"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="https://www.fbf.com.bo/img/sponsor-1.png"
+            alt=""
+            height="50"
+            width="100"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="https://www.fbf.com.bo/img/sponsor-3.png"
+            alt=""
+            height="50"
+            width="100"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="https://www.fbf.com.bo/img/sponsor-4.png"
+            alt=""
+            height="50"
+            width="100"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="https://www.fbf.com.bo/img/sponsor-6.png"
+            alt=""
+            height="50"
+            width="100"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="https://www.fbf.com.bo/img/sponsor-7.png"
+            alt=""
+            height="50"
+            width="100"
+          />
+        </div>
+        <div class="row">
+          <div class="col-4"></div>
+          <div class="col-4">
+            <ul class="list-unstyled text-muted text-center">
+              <li>Av. Libertadores Nro. 1168</li>
+              <li>Telefono: 4577853 - 4578775</li>
+              <li>Cochabamaba - Bolivia</li>
+            </ul>
+          </div>
+          <div class="col-4"></div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

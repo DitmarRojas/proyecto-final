@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <title>Federacion Boliviana De Futbol</title>
+    <style>
+      div.gallery {
+        border: 1px solid #ccc;
+      }
+
+      div.gallery:hover {
+        border: 1px solid #777;
+      }
+
+      div.gallery img {
+        width: 100%;
+        height: auto;
+      }
+
+      div.desc {
+        padding: 15px;
+        text-align: center;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .responsive {
+        padding: 0 6px;
+        float: left;
+        width: 24.99999%;
+      }
+
+      @media only screen and (max-width: 700px) {
+        .responsive {
+          width: 49.99999%;
+          margin: 6px 0;
+        }
+      }
+
+      @media only screen and (max-width: 500px) {
+        .responsive {
+          width: 100%;
+        }
+      }
+
+      .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body class="bg-success bg-opacity-25">
+    <!--ENCABEZADO-->
+    <div
+      class="container-fluid text-center"
+      style="
+        background-image: url(https://scontent.fcbb2-2.fna.fbcdn.net/v/t39.30808-6/377754456_824308319361588_8359719544941291646_n.png?_nc_cat=102&ccb=1-7&_nc_sid=783fdb&_nc_ohc=j7Pz7jgTxm4AX93oEko&_nc_ht=scontent.fcbb2-2.fna&oh=00_AfDFjRcmWNaxCzdDrxpdInvHqubgFebSAoBcZoAmwUWdWQ&oe=65873DC8);
+        background-position: center;
+      "
+    >
+      <div class="row">
+        <div class="col-4 pt-1">
+          <img
+            src="https://assets.stickpng.com/images/6099129a3ae4510004af4a21.png"
+            alt=""
+            height="130"
+            width="150"
+          />
+        </div>
+        <div class="col-4">
+          <img
+            src="https://www.fbf.com.bo/img/escudo.png"
+            alt=""
+            height="150"
+            width="150"
+          />
+        </div>
+        <div class="col-4 pt-1">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Logo_de_la_Conmebol.svg/555px-Logo_de_la_Conmebol.svg.png"
+            alt=""
+            height="130"
+            width="150"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="shadow-lg border border-danger-subtle border-2">
+      <nav
+        class="navbar navbar-expand-lg"
+        style="background-color: rgba(255, 255, 255, 0.648)"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="https://www.fbf.com.bo/img/escudo.png"
+              alt="logofbf"
+              width="50"
+              height="50"
+            />
+          </a>
+          <a class="navbar-brand" href="https://www.fbf.com.bo/"
+            ><h2 class="text-success fw-bold">FBF</h2></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  DIVISION PROFESIONAL
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="/division pro/liga/indexliga.html"
+                      >LIGA PROFESIONAL</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="/division pro/seleccion/seleccion.html"
+                      >SELECCION BOLIVIANA</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  AFICIONADOS
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <h5 class="dropdown-header">COPA SIMON BOLIVAR</h5>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">CLASIFICADOS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">CAMPEONES 2023</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  CLUBES
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">HISTORIA</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">JUGADORES</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  TODOS CONTRA TODOS
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="/division pro/liga/todos/todos.html"
+                      >TABLA DE POSICIONES</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="/division pro/liga/todos/todos.html"
+                      >CAMPEONES 2023</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  COPA TIGO 2023
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">TABLA DE POSICIONES</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">CAMPEONES</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  SELECCION BOLIVIANA
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">CALENDARIO DE PARTIDOS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">JUGADORES</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  COPA SIMON BOLIVAR
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">CLASIFICADOS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">CAMPEONES 2023</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--cuerpo-->
+
+    <h1
+      class="display-3 my-5"
+      style="
+        font-family: verdana;
+        font-weight: bold;
+        text-align: center;
+        font-size: 60px;
+        letter-spacing: 2px;
+        word-spacing: 1px;
+        color: rgba(29, 167, 17, 0.85);
+        text-shadow: rgb(0, 0, 0) 0px 5px 4px;
+      "
+    >
+      COPA SIMÓN BOLIVAR CAMPEONES 2023
+    </h1>
+
+    <h3
+      class="display-3 my-5"
+      style="
+        font-family: verdana;
+        font-weight: bold;
+        text-align: center;
+        font-size: 20px;
+        letter-spacing: 2px;
+        word-spacing: 1px;
+        color: rgba(5, 34, 66, 0.85);
+        text-shadow: rgb(70, 68, 68) 0px 5px 4px;
+      "
+    >
+      GUALBERTO VILLARROEL SAN JOSE
+    </h3>
+    <div class="responsive">
+      <div class="gallery">
+        <a
+          target="_blank"
+          href="https://ahoraelpueblo.bo/images/noticias/Deportes/2023/12/GVprimera111223.jpg"
+        >
+          <img
+            src="https://ahoraelpueblo.bo/images/noticias/Deportes/2023/12/GVprimera111223.jpg"
+            alt="Cinque Terre"
+            width="600"
+            height="400"
+          />
+        </a>
+        <p style="text-align: center">GUALBERTO VILLARROEL SAN JOSE</p>
+        <div class="desc">
+          El club Gualberto Villarroel San José le devolvió el fútbol
+          profesional a Oruro, después de consagrarse campeón de la Copa Simón
+          Bolívar por vencer en la final a San Antonio Bulo Bulo de Cochabamba
+          4-2 en penales, partido jugado en el estadio Jesús Bermúdez de la
+          capital del folklore. El cotejo en tiempo reglamentario finalizó con
+          triunfo del representativo del trópico cochabambino por 1 a 0,
+          resultado que forzó a la definición desde los 12 pasos, ya que en el
+          compromiso de ida el cuadro orureño ganó por el mismo marcador en el
+          estadio Carlos Villegas, de Entre Ríos. .
+        </div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="img_forest.jpg">
+          <img
+            src="https://ahoraelpueblo.bo/images/noticias/Deportes/2023/12/GVprimera2111223.jpg"
+            alt="Forest"
+            width="600"
+            height="400"
+          />
+        </a>
+        <div class="desc">
+          El duelo fue intenso, disputado, con buen dominio de balón y
+          generación de fútbol ofensivo. El equipo santo tuvo la posesión de la
+          pelota, pero el cuadro antoniano generó las más claras opciones de
+          gol, con llegadas veloces por las bandas y disparos de media
+          distancia. Desde el inicio, San Antonio buscó el triunfo con un
+          disparo de Jaime Arandia (7’) que Rivas sacó con una mano, y la última
+          jugada de peligro en la que se lució Rivas fue a los 78’, cuando
+          desvió un zurdazo de Bautista cuando todos cantaban gol.
+        </div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="img_lights.jpg">
+          <img
+            src="https://ahoraelpueblo.bo/images/noticias/Deportes/2023/12/GVprimera3111223.jpg"
+            alt="Northern Lights"
+            width="600"
+            height="400"
+          />
+        </a>
+        <div class="desc">
+          De contragolpe, GV San José tuvo la chance de asegurar el triunfo
+          cuando Joel Bejarano ejecutó un derechazo que Carlos Taboada evitó que
+          el balón ingrese a su arco al poner la cabeza delante de la línea de
+          gol, a los 80’. Pese a la intensa lluvia que cayó en la previa,
+          durante y después del encuentro, el público orureño no le restó apoyo
+          a su representante y llenó el estadio para alentar en los más de 90
+          minutos de juego para celebrar un anhelo que terminó por ejecutarse
+          después de dos años (2021), año en el que perdió la categoría de San
+          José.
+        </div>
+      </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="img_mountains.jpg">
+          <img
+            src="https://ahoraelpueblo.bo/images/noticias/Deportes/2023/12/GVprimera5111223.jpg"
+            alt="Mountains"
+            width="600"
+            height="400"
+          />
+        </a>
+        <div class="desc">
+          Luego del garrafal error todo se vino abajo, costó reencontrarse y
+          armarse de más valor porque se venía la lotería de los lanzamientos
+          penales. Para el elenco orureño anotaron Joel Bejarano, Augusto
+          Seimandi, Jeymer Díaz y Percy Loza, y Yhonjairo Villegas falló. Para
+          el elenco valluno convirtieron Jenrry Alaca y Huberth Sánchez, y
+          fallaron Gustavo Mendoza y Alexander Bautista. Rivas aseguró la
+          victoria en la ejecución cuando atajó el remate de Alexander Bautista
+          para dejar la cuenta 3-2 y sentenció el duelo su compañero Percy Loza
+          al convertir el 4 a 2, con un zurdazo que ensordeció el estadio con el
+          grito de victoria.
+        </div>
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div style="padding: 6px">
+      <p>
+        El director técnico Eduardo Villegas (foto) fue el gestor que hizo
+        posible que Gualberto Villarroel San José ascienda a la División
+        Profesional como campeón de la Copa Simón Bolívar e hizo posible que
+        Oruro vuelva a aparecer en el mapa futbolístico luego de dos años de
+        ausencia. “Contento porque Oruro vuelve a tener fútbol profesional.
+        Disfruten de esto, es de todos, no solo de los jugadores, del cuerpo
+        técnico, este título es de todos los orureños”, dijo Villegas,
+        entrenador de 59 años, que le ganó el duelo de técnicos al brasileño
+        Thiago Leitao.
+      </p>
+      <p>
+        Villegas, seis veces campeón nacional como entrenador con Universitario
+        de Sucre, The Strongest (tres veces), Wilstermann y San José, llegó a la
+        dirección técnica de GV San José en febrero de este año con el objetivo
+        de regalarle fútbol profesional a Oruro y cumplió con su palabra, volvió
+        a ganarse el afecto de la población orureña. “Somos campeones, estamos
+        contentos, la alegría es única y el sentimiento es mayor viendo el marco
+        humano. Es para disfrutar lo que logramos”, mencionó Villegas luego de
+        que GV San José ganó la definición por penales por 4-2, en el estadio
+        Jesús Bermúdez, donde el entrenador cochabambino salió campeón con San
+        José en 2018. Además de ser campeón como entrenador del cuadro de la ‘V’
+        azulada y ascender a GV San José, Villegas guarda un grato recuerdo de
+        Oruro en su faceta como futbolista. En 1995 fue campeón nacional.
+      </p>
+    </div>
+
+    <!--PIE DE PAGINA FOOTER-->
+    <div
+      class="container-fluid text-center"
+      style="
+        background-image: url(https://images.vexels.com/content/69996/preview/abstract-green-background-with-spiral-lines-d7cdf5.png);
+      "
+    >
+      <div class="row">
+        <div>
+          <img
+            src="https://www.fbf.com.bo/img/escudo.png"
+            alt=""
+            height="100"
+            width="150"
+          />
+          <h5
+            style="
+              color: darkgreen;
+              font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',
+                sans-serif;
+              text-shadow: 3px 4px 5px;
+            "
+          >
+            PATROCINADORES OFICIALES DE LA VERDE
+          </h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img
+            src="https://www.fbf.com.bo/img/sponsor-2.png"
+            alt=""
+            height="50"
+            width="100"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="https://www.fbf.com.bo/img/sponsor-1.png"
+            alt=""
+            height="50"
+            width="100"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="https://www.fbf.com.bo/img/sponsor-3.png"
+            alt=""
+            height="50"
+            width="100"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="https://www.fbf.com.bo/img/sponsor-4.png"
+            alt=""
+            height="50"
+            width="100"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="https://www.fbf.com.bo/img/sponsor-6.png"
+            alt=""
+            height="50"
+            width="100"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="https://www.fbf.com.bo/img/sponsor-7.png"
+            alt=""
+            height="50"
+            width="100"
+          />
+        </div>
+        <div class="row">
+          <div class="col-4"></div>
+          <div class="col-4">
+            <ul class="list-unstyled text-muted text-center">
+              <li>Av. Libertadores Nro. 1168</li>
+              <li>Telefono: 4577853 - 4578775</li>
+              <li>Cochabamaba - Bolivia</li>
+            </ul>
+          </div>
+          <div class="col-4"></div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <title>Todos Contra Todos 2023</title>
+  </head>
+  <body class="bg-success bg-opacity-25">
+    <!--ENCABEZADO-->
+    <div
+      class="container-fluid text-center"
+      style="
+        background-image: url(https://scontent.fcbb2-2.fna.fbcdn.net/v/t39.30808-6/377754456_824308319361588_8359719544941291646_n.png?_nc_cat=102&ccb=1-7&_nc_sid=783fdb&_nc_ohc=j7Pz7jgTxm4AX93oEko&_nc_ht=scontent.fcbb2-2.fna&oh=00_AfDFjRcmWNaxCzdDrxpdInvHqubgFebSAoBcZoAmwUWdWQ&oe=65873DC8);
+        background-position: center;
+      "
+    >
+      <div class="row">
+        <div class="col-4 pt-1">
+          <img
+            src="https://assets.stickpng.com/images/6099129a3ae4510004af4a21.png"
+            alt=""
+            height="130"
+            width="150"
+          />
+        </div>
+        <div class="col-4">
+          <img
+            src="https://www.fbf.com.bo/img/escudo.png"
+            alt=""
+            height="150"
+            width="150"
+          />
+        </div>
+        <div class="col-4 pt-1">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Logo_de_la_Conmebol.svg/555px-Logo_de_la_Conmebol.svg.png"
+            alt=""
+            height="130"
+            width="150"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="shadow-lg border border-danger-subtle border-2">
+      <nav
+        class="navbar navbar-expand-lg"
+        style="background-color: rgba(255, 255, 255, 0.648)"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/index.html">
+            <img
+              src="https://www.fbf.com.bo/img/escudo.png"
+              alt="logofbf"
+              width="50"
+              height="50"
+            />
+          </a>
+          <a class="navbar-brand" href="https://www.fbf.com.bo/"
+            ><h2 class="text-success fw-bold">FBF</h2></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  DIVISION PROFESIONAL
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="/division pro/liga/indexliga.html"
+                      >LIGA PROFESIONAL</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="/division pro/seleccion/seleccion.html"
+                      >SELECCION BOLIVIANA</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  AFICIONADOS
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <h5 class="dropdown-header">COPA SIMON BOLIVAR</h5>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">CLASIFICADOS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">CAMPEONES 2023</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  CLUBES
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">HISTORIA</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">JUGADORES</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  TODOS CONTRA TODOS
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="/division pro/liga/todos/todos.html"
+                      >TABLA DE POSICIONES</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="/division pro/liga/todos/todos.html"
+                      >CAMPEONES 2023</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  COPA TIGO 2023
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="/division pro//liga//tigo//tigo.html"
+                      >TABLA DE POSICIONES</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="/division pro//liga//tigo//tigo.html"
+                      >CAMPEONES</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  SELECCION BOLIVIANA
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">CALENDARIO DE PARTIDOS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">JUGADORES</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  COPA SIMON BOLIVAR
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">CLASIFICADOS</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">CAMPEONES 2023</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!--CUERPO-->
+    <h1
+      class="text-center"
+      style="
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-shadow: 1px 2px 5px;
+      "
+    >
+      Todos Contra Todos 2023
+    </h1>
+
+    <!--TABLA DE POSICIONES-->
+    <div class="container my-4">
+      <table class="table table-bordered text-center">
+        <thead>
+          <tr>
+            <th
+              colspan="10"
+              style="
+                font-size: large;
+                color: slateblue;
+                background-color: cornsilk;
+              "
+            >
+              TABLA DE POSICIONES
+            </th>
+          </tr>
+          <tr class="table-danger">
+            <th scope="col">Pos</th>
+            <th scope="col">Equipo</th>
+            <th scope="col">J</th>
+            <th scope="col">G</th>
+            <th scope="col">E</th>
+            <th scope="col">P</th>
+            <th scope="col">GF</th>
+            <th scope="col">GC</th>
+            <th scope="col">DF</th>
+            <th scope="col">Pts</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>The Strongest</td>
+            <td>32</td>
+            <td>19</td>
+            <td>8</td>
+            <td>5</td>
+            <td>65</td>
+            <td>34</td>
+            <td>31</td>
+            <th>65</th>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Bolivar</td>
+            <td>32</td>
+            <td>17</td>
+            <td>6</td>
+            <td>9</td>
+            <td>84</td>
+            <td>42</td>
+            <td>42</td>
+            <th>57</th>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Always Ready</td>
+            <td>32</td>
+            <td>16</td>
+            <td>9</td>
+            <td>7</td>
+            <td>54</td>
+            <td>35</td>
+            <td>19</td>
+            <th>57</th>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Nacional Potosi</td>
+            <td>32</td>
+            <td>16</td>
+            <td>6</td>
+            <td>10</td>
+            <td>72</td>
+            <td>46</td>
+            <td>26</td>
+            <th>54</th>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Aurora</td>
+            <td>32</td>
+            <td>14</td>
+            <td>9</td>
+            <td>9</td>
+            <td>45</td>
+            <td>31</td>
+            <td>14</td>
+            <th>51</th>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>Real Tamayapo</td>
+            <td>32</td>
+            <td>13</td>
+            <td>10</td>
+            <td>9</td>
+            <td>36</td>
+            <td>34</td>
+            <td>2</td>
+            <th>49</th>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>Real Santa Cruz</td>
+            <td>32</td>
+            <td>13</td>
+            <td>7</td>
+            <td>12</td>
+            <td>31</td>
+            <td>42</td>
+            <td>-11</td>
+            <th>46</th>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>Wilsterman</td>
+            <td>32</td>
+            <td>12</td>
+            <td>13</td>
+            <td>7</td>
+            <td>39</td>
+            <td>27</td>
+            <td>12</td>
+            <th>43</th>
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td>Oriente Petrolero</td>
+            <td>32</td>
+            <td>11</td>
+            <td>10</td>
+            <td>11</td>
+            <td>44</td>
+            <td>42</td>
+            <td>2</td>
+            <th>43</th>
+          </tr>
+          <tr>
+            <th scope="row">10</th>
+            <td>Univesitario de Vinto</td>
+            <td>32</td>
+            <td>9</td>
+            <td>14</td>
+            <td>9</td>
+            <td>30</td>
+            <td>28</td>
+            <td>2</td>
+            <th>41</th>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>Independiente</td>
+            <td>32</td>
+            <td>13</td>
+            <td>1</td>
+            <td>18</td>
+            <td>32</td>
+            <td>45</td>
+            <td>-13</td>
+            <th>40</th>
+          </tr>
+          <tr>
+            <th scope="row">12</th>
+            <td>Royal Pari</td>
+            <td>32</td>
+            <td>8</td>
+            <td>11</td>
+            <td>13</td>
+            <td>40</td>
+            <td>53</td>
+            <td>-13</td>
+            <th>35</th>
+          </tr>
+          <tr>
+            <th scope="row">13</th>
+            <td>Guabira</td>
+            <td>32</td>
+            <td>10</td>
+            <td>5</td>
+            <td>17</td>
+            <td>34</td>
+            <td>49</td>
+            <td>-15</td>
+            <th>35</th>
+          </tr>
+          <tr>
+            <th scope="row">14</th>
+            <td>Blooming</td>
+            <td>32</td>
+            <td>9</td>
+            <td>6</td>
+            <td>17</td>
+            <td>37</td>
+            <td>56</td>
+            <td>-19</td>
+            <th>33</th>
+          </tr>
+          <tr>
+            <th scope="row">15</th>
+            <td>Libertad Gran Mamore</td>
+            <td>32</td>
+            <td>9</td>
+            <td>6</td>
+            <td>17</td>
+            <td>32</td>
+            <td>65</td>
+            <td>-33</td>
+            <th>33</th>
+          </tr>
+          <tr>
+            <th scope="row">16</th>
+            <td>Vaca Diez</td>
+            <td>32</td>
+            <td>9</td>
+            <td>6</td>
+            <td>17</td>
+            <td>32</td>
+            <td>61</td>
+            <td>-19</td>
+            <th>32</th>
+          </tr>
+          <tr>
+            <th scope="row">17</th>
+            <td>Palmafrol</td>
+            <td>32</td>
+            <td>8</td>
+            <td>5</td>
+            <td>19</td>
+            <td>32</td>
+            <td>59</td>
+            <td>-27</td>
+            <th>29</th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2
+      class="text-center"
+      style="
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-shadow: 1px 2px 5px;
+      "
+    >
+      Campeones
+    </h2>
+
+    <!--TABLA DE CAMPEONES-->
+    <div class="container my-4">
+      <table class="table table-bordered text-center">
+        <thead>
+          <tr>
+            <th
+              colspan="3"
+              style="
+                font-size: large;
+                color: slateblue;
+                background-color: cornsilk;
+              "
+            >
+              TABLA DE CAMPEONES
+            </th>
+          </tr>
+          <tr class="table-danger">
+            <th scope="col">Año</th>
+            <th scope="col">Escudo</th>
+            <th scope="col">Club</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2023</td>
+            <td>
+              <img
+                src="https://s.hs-data.com/bilder/wappen/mini/2881.gif?fallback=png"
+                alt=""
+              />
+            </td>
+            <td>The Strongest</td>
+          </tr>
+          <tr>
+            <td>2022 Apertura</td>
+            <td>
+              <img
+                src="https://s.hs-data.com/bilder/wappen/mini/2880.gif?fallback=png"
+                alt=""
+              />
+            </td>
+            <td>Bolivar</td>
+          </tr>
+          <tr>
+            <td>2021</td>
+            <td>
+              <img
+                src="https://s.hs-data.com/bilder/wappen/mini/13302.gif?fallback=png"
+                alt=""
+              />
+            </td>
+            <td>Independiente Petrolero</td>
+          </tr>
+          <tr>
+            <td>2020</td>
+            <td>
+              <img
+                src="https://s.hs-data.com/bilder/wappen/mini/8092.gif?fallback=png"
+                alt=""
+              />
+            </td>
+            <td>Always Ready</td>
+          </tr>
+          <tr>
+            <td>2019 Clausura</td>
+            <td>
+              <img
+                src="https://s.hs-data.com/bilder/wappen/mini/3779.gif?fallback=png"
+                alt=""
+              />
+            </td>
+            <td>Jorge Wilstermann</td>
+          </tr>
+          <tr>
+            <td>2019 Apertura</td>
+            <td>
+              <img
+                src="https://s.hs-data.com/bilder/wappen/mini/2880.gif?fallback=png"
+                alt=""
+              />
+            </td>
+            <td>Bolivar</td>
+          </tr>
+          <tr>
+            <td>2018 Clausura</td>
+            <td>
+              <img
+                src="https://s.hs-data.com/bilder/wappen/mini/3342.gif?fallback=png"
+                alt=""
+              />
+            </td>
+            <td>San Jose</td>
+          </tr>
+          <tr>
+            <td>2018 Apertura</td>
+            <td>
+              <img
+                src="https://s.hs-data.com/bilder/wappen/mini/3779.gif?fallback=png"
+                alt=""
+              />
+            </td>
+            <td>Jorge Wilstermann</td>
+          </tr>
+          <tr>
+            <td>2017 Clausura</td>
+            <td>
+              <img
+                src="https://s.hs-data.com/bilder/wappen/mini/2880.gif?fallback=png"
+                alt=""
+              />
+            </td>
+            <td>Bolivar</td>
+          </tr>
+          <tr>
+            <td>2017 Apertura</td>
+            <td>
+              <img
+                src="https://s.hs-data.com/bilder/wappen/mini/2880.gif?fallback=png"
+                alt=""
+              />
+            </td>
+            <td>Bolivar</td>
+          </tr>
+          <tr>
+            <td>2016/2017 Apertura</td>
+            <td>
+              <img
+                src="https://s.hs-data.com/bilder/wappen/mini/2881.gif?fallback=png"
+                alt=""
+              />
+            </td>
+            <td>The Strongest</td>
+          </tr>
+          <tr>
+            <td>2015/2016 Clausura</td>
+            <td>
+              <img
+                src="https://s.hs-data.com/bilder/wappen/mini/3779.gif?fallback=png"
+                alt=""
+              />
+            </td>
+            <td>Jorge Wilstermann</td>
+          </tr>
+          <tr>
+            <td>2015/2016 Apertura</td>
+            <td>
+              <img
+                src="https://s.hs-data.com/bilder/wappen/mini/20376.gif?fallback=png"
+                alt=""
+              />
+            </td>
+            <td>Sport Boys Warnes</td>
+          </tr>
+          <tr>
+            <td>2014-2015 Clausura</td>
+            <td>
+              <img
+                src="https://s.hs-data.com/bilder/wappen/mini/2880.gif?fallback=png"
+                alt=""
+              />
+            </td>
+            <td>Bolivar</td>
+          </tr>
+          <tr>
+            <td>2014-2015 Apertura</td>
+            <td>
+              <img
+                src="https://s.hs-data.com/bilder/wappen/mini/2880.gif?fallback=png"
+                alt=""
+              />
+            </td>
+            <td>Bolivar</td>
+          </tr>
+          <tr>
+            <td>2013-2014 Clausura</td>
+            <td>
+              <img
+                src="https://s.hs-data.com/bilder/wappen/mini/8095.gif?fallback=png"
+                alt=""
+              />
+            </td>
+            <td>Universitario de Sucre</td>
+          </tr>
+          <tr>
+            <td>2013-2014 Apertura</td>
+            <td>
+              <img
+                src="https://s.hs-data.com/bilder/wappen/mini/2881.gif?fallback=png"
+                alt=""
+              />
+            </td>
+            <td>The Strongest</td>
+          </tr>
+          <tr>
+            <td>2012-2013 Clausura</td>
+            <td>
+              <img
+                src="https://s.hs-data.com/bilder/wappen/mini/2880.gif?fallback=png"
+                alt=""
+              />
+            </td>
+            <td>Bolivar</td>
+          </tr>
+          <tr>
+            <td>2012-2013 Apertura</td>
+            <td>
+              <img
+                src="https://s.hs-data.com/bilder/wappen/mini/2881.gif?fallback=png"
+                alt=""
+              />
+            </td>
+            <td>The Strongest</td>
+          </tr>
+          <tr>
+            <td>2011/2012 Clausura</td>
+            <td>
+              <img
+                src="https://s.hs-data.com/bilder/wappen/mini/2881.gif?fallback=png"
+                alt=""
+              />
+            </td>
+            <td>The Strongest</td>
+          </tr>
+          <tr>
+            <td>2011/2012 Apertura</td>
+            <td>
+              <img
+                src="https://s.hs-data.com/bilder/wappen/mini/2881.gif?fallback=png"
+                alt=""
+              />
+            </td>
+            <td>The Strongest</td>
+          </tr>
+          <tr>
+            <td>2011 Torneo</td>
+            <td>
+              <img
+                src="https://s.hs-data.com/bilder/wappen/mini/2880.gif?fallback=png"
+                alt=""
+              />
+            </td>
+            <td>Bolivar</td>
+          </tr>
+          <tr>
+            <td>2010 Clausura</td>
+            <td>
+              <img
+                src="https://s.hs-data.com/bilder/wappen/mini/2881.gif?fallback=png"
+                alt=""
+              />
+            </td>
+            <td>Oriente Petrolero</td>
+          </tr>
+          <tr>
+            <td>2010 Apertura</td>
+            <td>
+              <img
+                src="https://s.hs-data.com/bilder/wappen/mini/3779.gif?fallback=png"
+                alt=""
+              />
+            </td>
+            <td>Jorge Wilstermann</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!--PIE DE PAGINA FOOTER-->
+    <div
+      class="container-fluid text-center"
+      style="
+        background-image: url(https://images.vexels.com/content/69996/preview/abstract-green-background-with-spiral-lines-d7cdf5.png);
+      "
+    >
+      <div class="row">
+        <div>
+          <img
+            src="https://www.fbf.com.bo/img/escudo.png"
+            alt=""
+            height="100"
+            width="150"
+          />
+          <h5
+            style="
+              color: darkgreen;
+              font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',
+                sans-serif;
+              text-shadow: 3px 4px 5px;
+            "
+          >
+            PATROCINADORES OFICIALES DE LA VERDE
+          </h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img
+            src="https://www.fbf.com.bo/img/sponsor-2.png"
+            alt=""
+            height="50"
+            width="100"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="https://www.fbf.com.bo/img/sponsor-1.png"
+            alt=""
+            height="50"
+            width="100"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="https://www.fbf.com.bo/img/sponsor-3.png"
+            alt=""
+            height="50"
+            width="100"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="https://www.fbf.com.bo/img/sponsor-4.png"
+            alt=""
+            height="50"
+            width="100"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="https://www.fbf.com.bo/img/sponsor-6.png"
+            alt=""
+            height="50"
+            width="100"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="https://www.fbf.com.bo/img/sponsor-7.png"
+            alt=""
+            height="50"
+            width="100"
+          />
+        </div>
+        <div class="row">
+          <div class="col-4"></div>
+          <div class="col-4">
+            <ul class="list-unstyled text-muted text-center">
+              <li>Av. Libertadores Nro. 1168</li>
+              <li>Telefono: 4577853 - 4578775</li>
+              <li>Cochabamaba - Bolivia</li>
+            </ul>
+          </div>
+          <div class="col-4"></div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
